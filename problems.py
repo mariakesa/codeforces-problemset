@@ -1,3 +1,38 @@
+def _263A():
+    '''
+    Manhattan distance
+    '''
+    matrix_rows = []
+    for i in range(5):
+        row = input()
+        numbers = row.split(' ')
+        for j in range(5):
+            if int(numbers[j]) == 1:
+                coordinate = (i, j)
+    delta_y = abs(2-coordinate[0])
+    delta_x = abs(2-coordinate[1])
+    print(delta_x+delta_y)
+
+
+_263A()
+
+
+def _50A():
+    '''Finish this problem!!'''
+    inpt = '2 4'
+    m, n = inpt.split(' ')
+    m, n = int(m), int(n)
+    print((m*n)//2)
+
+
+def _158A():
+    n, k = input().split(' ')
+    n, k = int(n), int(k)-1
+    score_ints = [int(i) for i in input().split(' ')]
+    k_score = score_ints[k]
+    advance = [i for i in score_ints if i >= k_score and i > 0]
+    print(len(advance))
+
 
 def _282A():
     n_lines = int(input())
